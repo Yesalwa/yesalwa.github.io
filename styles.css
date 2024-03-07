@@ -67,3 +67,96 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+
+#contact-form {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #00b98b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #008f77;
+}
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.team-member {
+    flex-basis: calc(20% - 20px); /* Adjust the width as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%; /* Adjust if necessary */
+    height: auto;
+    border-radius: 50%; /* Make circular if desired */
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.team-member a {
+    font-size: 1rem;
+    color: #00b98b; /* Adjust color as necessary */
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .team-member {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex-basis: 100%;
+    }
+}
